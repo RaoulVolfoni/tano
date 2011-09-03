@@ -40,8 +40,6 @@ SET(Tano_UIs
 	ui/epg/EpgSchedule.ui
 	ui/playlist/PlaylistEdit.ui
 	ui/playlist/PlaylistImportCSV.ui
-	ui/playlist/PlaylistImportWeb.ui
-	ui/playlist/PlaylistSelect.ui
 	ui/playlist/PlaylistWidget.ui
 	ui/recorder/Recorder.ui
 	ui/recorder/TimersEdit.ui
@@ -61,7 +59,6 @@ SET(Tano_MOCs	# List of classes which Qt needs to produce MOCs for them (in orde
 	core/Print.h
 	core/UpdateManager.h
 	epg/EpgManager.h
-	epg/EpgSloveniaLoader.h
 	ui/MainWindow.h
 	ui/core/CurrentTime.h
 	ui/core/InfoBar.h
@@ -86,8 +83,6 @@ SET(Tano_MOCs	# List of classes which Qt needs to produce MOCs for them (in orde
 	ui/menu/MenuTrackVideo.h
 	ui/playlist/PlaylistEdit.h
 	ui/playlist/PlaylistImportCSV.h
-	ui/playlist/PlaylistImportWeb.h
-	ui/playlist/PlaylistSelect.h
 	ui/playlist/PlaylistWidget.h
 	ui/recorder/Recorder.h
 	ui/recorder/TimersEdit.h
@@ -148,8 +143,6 @@ IF(DBUS_FOUND)
 ENDIF(DBUS_FOUND)
 SET(Tano_Epg_Srcs
 	epg/EpgManager.cpp
-	epg/EpgSlovenia.cpp
-	epg/EpgSloveniaLoader.cpp
 )
 SET(Tano_Playlist_Srcs
 	playlist/CSVGenerator.cpp
@@ -185,8 +178,6 @@ SET(Tano_UI_Srcs
 	ui/menu/MenuTrackVideo.cpp
 	ui/playlist/PlaylistEdit.cpp
 	ui/playlist/PlaylistImportCSV.cpp
-	ui/playlist/PlaylistImportWeb.cpp
-	ui/playlist/PlaylistSelect.cpp
 	ui/playlist/PlaylistWidget.cpp
 	ui/recorder/Recorder.cpp
 	ui/recorder/TimersEdit.cpp
@@ -200,7 +191,6 @@ SET(Tano_UI_Srcs
 	ui/wizard/SettingsPage.cpp
 )
 SET(Tano_XML_Srcs
-	xml/PlaylistListHandler.cpp
 	xml/TanoHandlerOld.cpp
 	xml/TimersGenerator.cpp
 	xml/TimersHandler.cpp

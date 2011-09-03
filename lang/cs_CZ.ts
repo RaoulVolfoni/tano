@@ -673,10 +673,6 @@ Tím se zastaví i právě probíhající nahrávání.</translation>
         <translation>O</translation>
     </message>
     <message>
-        <source>Download from Web</source>
-        <translation>Stáhnout z internetu</translation>
-    </message>
-    <message>
         <source>Tano TV old channel list files(*.tano *.xml)</source>
         <translation>Soubory se starými seznamy programů Tano TV (*.m3u)</translation>
     </message>
@@ -829,37 +825,6 @@ Ztratíte všechny neuložené změny.</translation>
     </message>
 </context>
 <context>
-    <name>PlaylistImportWeb</name>
-    <message>
-        <source>Import playlist from Web</source>
-        <translation>Zavést seznam programů z internetu</translation>
-    </message>
-    <message>
-        <source>Refresh current playlist</source>
-        <translation>Obnovit současný seznam programů</translation>
-    </message>
-    <message>
-        <source>Open playlist</source>
-        <translation>Otevřít seznam programů</translation>
-    </message>
-    <message>
-        <source>&lt;i&gt;If you chose &apos;&apos;Refresh&apos;&apos;, your current channel numbers will remain the same. Only new channels will be added.&lt;/i&gt;</source>
-        <translation>&lt;i&gt;Pokud zvolíte &apos;&apos;Obnovit&apos;&apos;, vaše nynější čísla programů zůstanou stejná. Budou přidány pouze nové programy.&lt;/i&gt;</translation>
-    </message>
-    <message>
-        <source>Save channel list</source>
-        <translation>Uložit seznam programů</translation>
-    </message>
-    <message>
-        <source>Tano TV channel list files(*.m3u)</source>
-        <translation>Soubory se seznamy programů Tano TV (*.m3u)</translation>
-    </message>
-    <message>
-        <source>Import type</source>
-        <translation>Zavést typ</translation>
-    </message>
-</context>
-<context>
     <name>PlaylistPage</name>
     <message>
         <source>Please, select your IP TV provider or browse for custom playlist.</source>
@@ -868,37 +833,6 @@ Ztratíte všechny neuložené změny.</translation>
     <message>
         <source>Select playlist</source>
         <translation>Vybrat seznam programů</translation>
-    </message>
-</context>
-<context>
-    <name>PlaylistSelect</name>
-    <message>
-        <source>Select</source>
-        <translation>Vybrat</translation>
-    </message>
-    <message>
-        <source>Select your playlist</source>
-        <translation>Vyberte svůj seznam programů</translation>
-    </message>
-    <message>
-        <source>Country:</source>
-        <translation>Země:</translation>
-    </message>
-    <message>
-        <source>&lt;i&gt;Note: Not all countries and providers are available.&lt;/i&gt;</source>
-        <translation>&lt;i&gt;Poznámka: Ne všechny země a poskytovatelé jsou dostupní.&lt;/i&gt;</translation>
-    </message>
-    <message>
-        <source>Playlist:</source>
-        <translation>Seznam programů:</translation>
-    </message>
-    <message>
-        <source>1. Select your country from the menu below.</source>
-        <translation>1. Vyberte svoji zemi z nabídky níže.</translation>
-    </message>
-    <message>
-        <source>2. Select your playlist.</source>
-        <translation>2. Vyberte svůj seznam programů.</translation>
     </message>
 </context>
 <context>
@@ -1085,10 +1019,6 @@ Ztratíte všechny neuložené změny.</translation>
     <message>
         <source>Sagem JS Imported Playlist</source>
         <translation>Zavedený seznam programů Sagem JS</translation>
-    </message>
-    <message>
-        <source>The file is not a playlist list file.</source>
-        <translation>Soubor není souborem se seznamem programů.</translation>
     </message>
     <message>
         <source>Channel</source>
@@ -1442,10 +1372,6 @@ Ztratíte všechny neuložené změny.</translation>
 <context>
     <name>SettingsPlaylist</name>
     <message>
-        <source>Preset</source>
-        <translation>Přednastavení</translation>
-    </message>
-    <message>
         <source>...</source>
         <translation>...</translation>
     </message>
@@ -1454,28 +1380,12 @@ Ztratíte všechny neuložené změny.</translation>
         <translation>Nastavit znovu</translation>
     </message>
     <message>
-        <source>Custom</source>
-        <translation>Stanovený uživatelem</translation>
-    </message>
-    <message>
         <source>Tano TV channel list files(*.m3u)</source>
         <translation>Soubory se seznamy programů Tano TV (*.m3u)</translation>
     </message>
     <message>
         <source>Default channel list</source>
         <translation>Výchozí seznam programů</translation>
-    </message>
-    <message>
-        <source>Download from web</source>
-        <translation>Stáhnout z internetu</translation>
-    </message>
-    <message>
-        <source>Tano will download the channel list to your desired location and automatically set it as custom channel list.</source>
-        <translation>Tano stáhne seznam programů do vámi požadovaného umístění a automaticky jej nastaví jako uživatelský seznam programů.</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Stáhnout</translation>
     </message>
     <message>
         <source>Open channel list</source>

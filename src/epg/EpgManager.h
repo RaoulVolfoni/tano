@@ -27,7 +27,6 @@
 
 #include "container/EpgDayList.h"
 #include "core/Enums.h"
-#include "epg/EpgSloveniaLoader.h"
 
 class EpgManager : public QObject
 {
@@ -72,7 +71,6 @@ private:
 
 	QMap<QString, EpgDayList> _day[4];
 
-	EpgSloveniaLoader *_slovenia;
 	QTimer *_timer;
 };
 

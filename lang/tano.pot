@@ -632,10 +632,6 @@ msgid "About"
 msgstr ""
 
 msgctxt "PlaylistEdit|"
-msgid "Download from Web"
-msgstr ""
-
-msgctxt "PlaylistEdit|"
 msgid "Tano TV old channel list files(*.tano *.xml)"
 msgstr ""
 
@@ -785,70 +781,12 @@ msgctxt "PlaylistImportCSV|"
 msgid "URL"
 msgstr ""
 
-msgctxt "PlaylistImportWeb|"
-msgid "Import playlist from Web"
-msgstr ""
-
-msgctxt "PlaylistImportWeb|"
-msgid "Refresh current playlist"
-msgstr ""
-
-msgctxt "PlaylistImportWeb|"
-msgid "Open playlist"
-msgstr ""
-
-msgctxt "PlaylistImportWeb|"
-msgid ""
-"<i>If you chose ''Refresh'', your current channel numbers will remain the "
-"same. Only new channels will be added.</i>"
-msgstr ""
-
-msgctxt "PlaylistImportWeb|"
-msgid "Save channel list"
-msgstr ""
-
-msgctxt "PlaylistImportWeb|"
-msgid "Tano TV channel list files(*.m3u)"
-msgstr ""
-
-msgctxt "PlaylistImportWeb|"
-msgid "Import type"
-msgstr ""
-
 msgctxt "PlaylistPage|"
 msgid "Please, select your IP TV provider or browse for custom playlist."
 msgstr ""
 
 msgctxt "PlaylistPage|"
 msgid "Select playlist"
-msgstr ""
-
-msgctxt "PlaylistSelect|"
-msgid "Select"
-msgstr ""
-
-msgctxt "PlaylistSelect|"
-msgid "Select your playlist"
-msgstr ""
-
-msgctxt "PlaylistSelect|"
-msgid "Country:"
-msgstr ""
-
-msgctxt "PlaylistSelect|"
-msgid "<i>Note: Not all countries and providers are available.</i>"
-msgstr ""
-
-msgctxt "PlaylistSelect|"
-msgid "Playlist:"
-msgstr ""
-
-msgctxt "PlaylistSelect|"
-msgid "1. Select your country from the menu below."
-msgstr ""
-
-msgctxt "PlaylistSelect|"
-msgid "2. Select your playlist."
 msgstr ""
 
 msgctxt "PlaylistWidget|"
@@ -1027,10 +965,6 @@ msgstr ""
 
 msgctxt "QObject|"
 msgid "Sagem JS Imported Playlist"
-msgstr ""
-
-msgctxt "QObject|"
-msgid "The file is not a playlist list file."
 msgstr ""
 
 msgctxt "QObject|"
@@ -1372,10 +1306,6 @@ msgid "Select or change playlist"
 msgstr ""
 
 msgctxt "SettingsPlaylist|"
-msgid "Preset"
-msgstr ""
-
-msgctxt "SettingsPlaylist|"
 msgid "..."
 msgstr ""
 
@@ -1384,29 +1314,11 @@ msgid "Reset"
 msgstr ""
 
 msgctxt "SettingsPlaylist|"
-msgid "Custom"
-msgstr ""
-
-msgctxt "SettingsPlaylist|"
 msgid "Tano TV channel list files(*.m3u)"
 msgstr ""
 
 msgctxt "SettingsPlaylist|"
 msgid "Default channel list"
-msgstr ""
-
-msgctxt "SettingsPlaylist|"
-msgid "Download from web"
-msgstr ""
-
-msgctxt "SettingsPlaylist|"
-msgid ""
-"Tano will download the channel list to your desired location and "
-"automatically set it as custom channel list."
-msgstr ""
-
-msgctxt "SettingsPlaylist|"
-msgid "Download"
 msgstr ""
 
 msgctxt "SettingsPlaylist|"

@@ -18,7 +18,6 @@
 
 #include "container/EpgShowInfo.h"
 #include "core/GetFile.h"
-#include "epg/EpgSloveniaLoader.h"
 
 #include "EpgShow.h"
 #include "ui_EpgShow.h"
@@ -27,7 +26,6 @@ EpgShow::EpgShow(QWidget *parent)
 	: QStackedWidget(parent),
 	ui(new Ui::EpgShow),
 	_image(new GetFile()),
-	_slovenia(new EpgSloveniaLoader()),
 	_epgNext(""),
 	_epgPrevious("")
 {
@@ -43,7 +41,6 @@ EpgShow::~EpgShow()
 {
 	delete ui;
 	delete _image;
-	delete _slovenia;
 }
 
 void EpgShow::changeEvent(QEvent *e)
@@ -70,20 +67,11 @@ void EpgShow::get(const QString &id)
 	ui->labelPhoto->setPixmap(QPixmap(":/icons/48x48/image.png"));
 
 	show();
-
-	if(_type == Tano::Slovenia)
-		_slovenia->getShowInfo(processUrl(id));
 }
 
 void EpgShow::setEpgType(const Tano::EpgType type)
 {
-	disconnect(_slovenia, SIGNAL(showInfo(EpgShowInfo)), this, SLOT(display(EpgShowInfo)));
-
 	_type = type;
-
-	if(_type == Tano::Slovenia) {
-		connect(_slovenia, SIGNAL(showInfo(EpgShowInfo)), this, SLOT(display(EpgShowInfo)));
-	}
 }
 
 void EpgShow::display(const EpgShowInfo &info)

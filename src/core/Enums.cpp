@@ -22,19 +22,15 @@
 
 Tano::EpgType Tano::epgType(const QString &type)
 {
-	if(type == "slovenia")
-		return Tano::Slovenia;
-	else if(type == "xmltv")
+	if(type == "xmltv")
 		return Tano::XMLTV;
 	else
-		return Tano::Slovenia;
+		return Tano::XMLTV;
 }
 
 QString Tano::epgType(const EpgType &type)
 {
-	if(type == Tano::Slovenia)
-		return QString("slovenia");
-	else if(type == Tano::XMLTV)
+	if(type == Tano::XMLTV)
 		return QString("xmltv");
 	else
 		return QString("error");

@@ -41,7 +41,6 @@ protected:
 
 private slots:
 	void playlistBrowse();
-	void playlistDownload();
 	void playlistReset();
 
 private:

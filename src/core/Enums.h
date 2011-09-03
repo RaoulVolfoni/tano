@@ -34,7 +34,6 @@ namespace Tano
 	// Epg types
 	enum EpgType
 	{
-		Slovenia,
 		XMLTV
 	};
 

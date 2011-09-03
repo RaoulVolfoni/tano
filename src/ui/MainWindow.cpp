@@ -544,7 +544,7 @@ void MainWindow::openPlaylist(const bool &start)
 	connect(_select, SIGNAL(channelSelect(int)), this, SLOT(playChannel(int)));
 	mouseWheel();
 
-	Tano::EpgType epgType = Tano::Slovenia;
+	Tano::EpgType epgType = Tano::XMLTV;
 	ui->channelToolBox->setItemText(0,ui->playlistWidget->name());
 	_epg->setEpg(ui->playlistWidget->epg(), epgType);
 	_epgShow->setEpgType(epgType);

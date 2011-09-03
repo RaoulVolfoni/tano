@@ -29,7 +29,6 @@ namespace Ui
 }
 
 class EpgShowInfo;
-class EpgSloveniaLoader;
 class GetFile;
 
 class EpgShow : public QStackedWidget
@@ -60,7 +59,6 @@ private:
 	QString _epgNext;
 	QString _epgPrevious;
 	GetFile *_image;
-	EpgSloveniaLoader *_slovenia;
 	Tano::EpgType _type;
 };
 

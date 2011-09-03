@@ -22,18 +22,14 @@
 #include "ui_SettingsPlaylist.h"
 
 #include "core/Settings.h"
-#include "ui/playlist/PlaylistImportWeb.h"
-#include "ui/playlist/PlaylistSelect.h"
 
 SettingsPlaylist::SettingsPlaylist(QWidget *parent)
 	: QWidget(parent),
 	ui(new Ui::SettingsPlaylist)
 {
 	ui->setupUi(this);
-	ui->select->open("playlists/playlists.xml");
 
 	connect(ui->browsePlaylistButton, SIGNAL(clicked()), this, SLOT(playlistBrowse()));
-	connect(ui->downloadButton, SIGNAL(clicked()), this, SLOT(playlistDownload()));
 	connect(ui->resetPlaylistButton, SIGNAL(clicked()), this, SLOT(playlistReset()));
 }
 
@@ -56,18 +52,12 @@ void SettingsPlaylist::changeEvent(QEvent *e)
 
 QString SettingsPlaylist::playlist() const
 {
-	if(ui->customPlaylistRadio->isChecked())
-		return ui->playlistLineEdit->text();
-	else
-		return ui->select->playlist();
+	return ui->playlistLineEdit->text();
 }
 
 void SettingsPlaylist::setPlaylist(const QString &playlist)
 {
-	if(!ui->select->setPlaylist(playlist)) {
-		ui->customPlaylistRadio->setChecked(true);
-		ui->playlistLineEdit->setText(playlist);
-	}
+	ui->playlistLineEdit->setText(playlist);
 }
 
 void SettingsPlaylist::playlistReset()
@@ -81,16 +71,4 @@ void SettingsPlaylist::playlistBrowse()
 												QDir::homePath(),
 												tr("Tano TV channel list files(*.m3u)"));
 	ui->playlistLineEdit->setText(file);
-}
-
-void SettingsPlaylist::playlistDownload()
-{
-	PlaylistImportWeb web;
-	web.save();
-
-	if(web.playlist().isEmpty())
-		return;
-
-	ui->customPlaylistRadio->setChecked(true);
-	ui->playlistLineEdit->setText(web.playlist());
 }

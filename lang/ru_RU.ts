@@ -690,10 +690,6 @@ This will stop recording in progress.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Download from Web</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Tano TV old channel list files(*.tano *.xml)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -828,37 +824,6 @@ You will lose any unsaved changes.</source>
     </message>
 </context>
 <context>
-    <name>PlaylistImportWeb</name>
-    <message>
-        <source>Import playlist from Web</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Refresh current playlist</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Open playlist</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&lt;i&gt;If you chose &apos;&apos;Refresh&apos;&apos;, your current channel numbers will remain the same. Only new channels will be added.&lt;/i&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Save channel list</source>
-        <translation type="unfinished">Сохранить список каналов</translation>
-    </message>
-    <message>
-        <source>Tano TV channel list files(*.m3u)</source>
-        <translation type="unfinished">Файлы со списком ТВ каналов Tano(*.m3u)</translation>
-    </message>
-    <message>
-        <source>Import type</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>PlaylistPage</name>
     <message>
         <source>Please, select your IP TV provider or browse for custom playlist.</source>
@@ -866,37 +831,6 @@ You will lose any unsaved changes.</source>
     </message>
     <message>
         <source>Select playlist</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>PlaylistSelect</name>
-    <message>
-        <source>Select</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Select your playlist</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Country:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&lt;i&gt;Note: Not all countries and providers are available.&lt;/i&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Playlist:</source>
-        <translation type="unfinished">Список каналов:</translation>
-    </message>
-    <message>
-        <source>1. Select your country from the menu below.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>2. Select your playlist.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1084,10 +1018,6 @@ You will lose any unsaved changes.</source>
     <message>
         <source>Sagem JS Imported Playlist</source>
         <translation>Список, импортированный из Sagem JS</translation>
-    </message>
-    <message>
-        <source>The file is not a playlist list file.</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Channel</source>
@@ -1441,10 +1371,6 @@ You will lose any unsaved changes.</source>
 <context>
     <name>SettingsPlaylist</name>
     <message>
-        <source>Preset</source>
-        <translation>Предустановленный</translation>
-    </message>
-    <message>
         <source>...</source>
         <translation>...</translation>
     </message>
@@ -1453,28 +1379,12 @@ You will lose any unsaved changes.</source>
         <translation>Сброс</translation>
     </message>
     <message>
-        <source>Custom</source>
-        <translation>Пользовательский</translation>
-    </message>
-    <message>
         <source>Default channel list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tano TV channel list files(*.m3u)</source>
         <translation type="unfinished">Файлы со списком ТВ каналов Tano(*.m3u)</translation>
-    </message>
-    <message>
-        <source>Download from web</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Tano will download the channel list to your desired location and automatically set it as custom channel list.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open channel list</source>

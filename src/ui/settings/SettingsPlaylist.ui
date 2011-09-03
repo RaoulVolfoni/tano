@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>400</height>
+    <width>402</width>
+    <height>65</height>
    </rect>
   </property>
   <property name="windowIcon">
@@ -23,103 +23,44 @@
      <property name="title">
       <string>Default channel list</string>
      </property>
-     <layout class="QGridLayout" name="gridLayout_4">
-      <item row="0" column="0">
-       <widget class="QRadioButton" name="presetPlaylistRadio">
-        <property name="text">
-         <string>Preset</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0" colspan="2">
-       <layout class="QHBoxLayout" name="browseLayout">
-        <item>
-         <widget class="QLineEdit" name="playlistLineEdit">
-          <property name="enabled">
-           <bool>false</bool>
-          </property>
-          <property name="text">
-           <string notr="true">-</string>
-          </property>
-          <property name="readOnly">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QToolButton" name="browsePlaylistButton">
-          <property name="enabled">
-           <bool>false</bool>
-          </property>
-          <property name="text">
-           <string>...</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="resetPlaylistButton">
-          <property name="enabled">
-           <bool>false</bool>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="text">
-           <string>Reset</string>
-          </property>
-          <property name="icon">
-           <iconset resource="../../../data/icons.qrc">
-            <normaloff>:/icons/24x24/refresh.png</normaloff>:/icons/24x24/refresh.png</iconset>
-          </property>
-          <property name="iconSize">
-           <size>
-            <width>24</width>
-            <height>24</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item row="0" column="1">
-       <widget class="QRadioButton" name="customPlaylistRadio">
-        <property name="text">
-         <string>Custom</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </item>
-   <item>
-    <widget class="PlaylistSelect" name="select" native="true"/>
-   </item>
-   <item>
-    <widget class="QGroupBox" name="webBox">
-     <property name="title">
-      <string>Download from web</string>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QLabel" name="labelWeb">
+       <widget class="QLineEdit" name="playlistLineEdit">
         <property name="text">
-         <string>Tano will download the channel list to your desired location and automatically set it as custom channel list.</string>
+         <string notr="true">-</string>
         </property>
-        <property name="wordWrap">
+        <property name="readOnly">
          <bool>true</bool>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="downloadButton">
+       <widget class="QPushButton" name="resetPlaylistButton">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>25</height>
+         </size>
+        </property>
         <property name="text">
-         <string>Download</string>
+         <string>Reset</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../../data/icons.qrc">
+          <normaloff>:/icons/24x24/refresh.png</normaloff>:/icons/24x24/refresh.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="browsePlaylistButton">
+        <property name="text">
+         <string>...</string>
         </property>
        </widget>
       </item>
@@ -128,81 +69,8 @@
    </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>PlaylistSelect</class>
-   <extends>QWidget</extends>
-   <header>ui/playlist/PlaylistSelect.h</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources>
   <include location="../../../data/icons.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>customPlaylistRadio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>playlistLineEdit</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>241</x>
-     <y>51</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>161</x>
-     <y>82</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>customPlaylistRadio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>browsePlaylistButton</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>270</x>
-     <y>54</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>189</x>
-     <y>77</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>customPlaylistRadio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>resetPlaylistButton</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>286</x>
-     <y>54</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>257</x>
-     <y>74</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>customPlaylistRadio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>select</receiver>
-   <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>297</x>
-     <y>42</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>199</x>
-     <y>199</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

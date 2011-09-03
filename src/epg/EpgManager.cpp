@@ -29,14 +29,12 @@ EpgManager::EpgManager(QObject *parent)
 	_currentLoadEpg(""),
 	_currentRequest("")
 {
-	_slovenia = new EpgSloveniaLoader(this);
 	_timer = new QTimer(this);
 	connect(_timer, SIGNAL(timeout()), this, SLOT(current()));
 }
 
 EpgManager::~EpgManager()
 {
-	delete _slovenia;
 	delete _timer;
 }
 
@@ -45,8 +43,6 @@ void EpgManager::setEpg(const QStringList &epg,
 {
 	_epgList = epg;
 	_epgType = epgType;
-	if(_epgType == Tano::Slovenia)
-		connect(_slovenia, SIGNAL(schedule(EpgDayList)), this, SLOT(set(EpgDayList)));
 
 	load();
 }
@@ -79,7 +75,6 @@ void EpgManager::load()
 {
 	if(_currentRequest != "") {
 		_currentLoadEpg = _currentRequest;
-		_slovenia->getSchedule(_currentLoadEpg);
 
 		if(ConsoleOutput::debug())
 			qDebug() << "EPG:" << "Request:" << _currentLoadEpg;
@@ -87,7 +82,6 @@ void EpgManager::load()
 		for(int i=0; i<_epgList.size(); i++) {
 			if(!_day[0].contains(_epgList[i])) {
 				_currentLoadEpg = _epgList[i];
-				_slovenia->getSchedule(_epgList[i]);
 				break;
 			} else if(i == _epgList.size()-1) {
 				_ready = true;
